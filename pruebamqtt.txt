@@ -1,0 +1,226 @@
+Script started on 2022-04-07 11:35:40+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="203" LINES="55"]
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 client.py[4Pcd Descargas/exit[Kpython3 client.py[4Pcd Descargas/exit[Kpython3 client.py [5Pcd Descargas/exit[Kpython3 client.py 147.96.132.173[Kexit[Kcd Descargas/python3 client.py exit[Kcd Descargas/python3 client.pyexit[Kcd Descargas/python3 client.py[Kpython3 client.py[4Pcd Descargas/exit[Kpython3 client.py[4Pcd Descargas/exit[Kpython3 client.py [5Pcd Descargas/exit[Kpython3 client.pyexit[Kcd Descargas/python3 client.py exit[Kcd Descargas/python3 client.pyexit[Kcd Descargas/python3 client.py[Kpython3 01_broker_test.py wild.mat.ucm.es humidity
+MESSAGE: None humidity 0 b'26' 0
+MESSAGE: None humidity 0 b'25' 0
+MESSAGE: None humidity 0 b'24' 0
+MESSAGE: None humidity 0 b'33' 0
+MESSAGE: None humidity 0 b'33' 0
+MESSAGE: None humidity 0 b'29' 0
+MESSAGE: None humidity 0 b'28' 0
+MESSAGE: None humidity 0 b'36' 0
+MESSAGE: None humidity 0 b'29' 0
+MESSAGE: None humidity 0 b'32' 0
+MESSAGE: None humidity 0 b'38' 0
+^CTraceback (most recent call last):
+  File "01_broker_test.py", line 30, in <module>
+    main(broker, topic)
+  File "01_broker_test.py", line 21, in main
+    mqttc.loop_forever()
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 01_broker_test.py wild.mat.ucm.es humidityclient.py[K01_broker_test.py wild.mat.ucm.es humidity[1P[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[15@_broker_test.py
+LOG {'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'} 16 Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k60) client_id=b'combine_numbers'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'} 16 Sending SUBSCRIBE (d0, m1) [(b'numbers', 0)]
+LOG {'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'} 16 Received CONNACK (0, 0)
+LOG {'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'} 16 Received SUBACK
+LOG {'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (19 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f2d624f01f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.31823675714780986'
+invalid literal for int() with base 10: b'0.31823675714780986'
+^CTraceback (most recent call last):
+  File "02_broker_test.py", line 94, in <module>
+    main(broker)
+  File "02_broker_test.py", line 86, in main
+    mqttc.loop_forever()
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 02_broker_test.py wild.mat.ucm.es humidity[K[K[K[K[K[K[K[Knumbers
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k60) client_id=b'combine_numbers'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Sending SUBSCRIBE (d0, m1) [(b'numbers', 0)]
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received CONNACK (0, 0)
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received SUBACK
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (19 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.17866892400181622'
+invalid literal for int() with base 10: b'0.17866892400181622'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'34'
+timer working. timeout: 13.26533081982129
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'51'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (19 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.33616244950605645'
+invalid literal for int() with base 10: b'0.33616244950605645'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'60'
+timer working. timeout: 12.953405498291282
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.5556761620188837'
+invalid literal for int() with base 10: b'0.5556761620188837'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'64'
+timer working. timeout: 11.637353006835063
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.2269844903909478'
+invalid literal for int() with base 10: b'0.2269844903909478'
+timer end workin
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'85'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'92'
+timer working. timeout: 12.40754332827504
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.6838140341685383'
+invalid literal for int() with base 10: b'0.6838140341685383'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (19 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.28991595180529317'
+invalid literal for int() with base 10: b'0.28991595180529317'
+timer end workin
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.5902671188771526'
+invalid literal for int() with base 10: b'0.5902671188771526'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.9769234321606007'
+invalid literal for int() with base 10: b'0.9769234321606007'
+timer end workin
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'39'
+LOG {'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7f572f1bb1f0>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.9751124910011973'
+invalid literal for int() with base 10: b'0.9751124910011973'
+^CProcess Process-4:
+Traceback (most recent call last):
+  File "02_broker_test.py", line 94, in <module>
+    main(broker)
+  File "02_broker_test.py", line 86, in main
+    mqttc.loop_forever()
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1756, in loop_forever
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "02_broker_test.py", line 55, in timer
+    sleep(time)
+KeyboardInterrupt
+    rc = self._loop(timeout)
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 02_broker_test.py wild.mat.ucm.es numbers[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@3[16@_temperatures.py[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Ktemperature
+on_message temperature/t1 b'34'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'34']}}
+on_message temperature/t2 b'34'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'34'], 't2': [b'34']}}
+on_message temperature/t1 b'35'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'35'], 't2': [b'34']}}
+on_message temperature/t2 b'33'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'35'], 't2': [b'33']}}
+on_message temperature/t1 b'36'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'36'], 't2': [b'33']}}
+on_message temperature/t2 b'35'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'36'], 't2': [b'35']}}
+on_message temperature/t1 b'37'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'37'], 't2': [b'35']}}
+on_message temperature/t2 b'35'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'37'], 't2': [b'35']}}
+on_message temperature/t1 b'38'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'38'], 't2': [b'35']}}
+on_message temperature/t2 b'38'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'38'], 't2': [b'38']}}
+on_message temperature/t1 b'39'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39'], 't2': [b'38']}}
+on_message temperature/t2 b'41'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39'], 't2': [b'41']}}
+mean t1: 39.0
+mean t2: 41.0
+on_message temperature/t1 b'0'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0'], 't2': [b'41']}, 't1': [], 't2': []}
+on_message temperature/t2 b'0'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0'], 't2': [b'41', b'0']}, 't1': [], 't2': []}
+on_message temperature/t1 b'1'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0', b'1'], 't2': [b'41', b'0']}, 't1': [], 't2': []}
+on_message temperature/t2 b'3'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0', b'1'], 't2': [b'41', b'0', b'3']}, 't1': [], 't2': []}
+on_message temperature/t1 b'2'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0', b'1', b'2'], 't2': [b'41', b'0', b'3']}, 't1': [], 't2': []}
+on_message temperature/t2 b'0'
+on_message {'lock': <unlocked _thread.lock object at 0x7f170244f9c0>, 'temp': {'t1': [b'39', b'0', b'1', b'2'], 't2': [b'41', b'0', b'3', b'0']}, 't1': [], 't2': []}
+^CTraceback (most recent call last):
+  File "03_temperatures.py", line 46, in <module>
+    main(broker)
+  File "03_temperatures.py", line 34, in main
+    sleep(8)
+KeyboardInterrupt
+
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 03_temperatures.py wild.mat.ucm.es temperature[C[K[K[K[K[K[K[K[K[K[K[Khumidity[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@4[12@_humidity.py
+message:temperature/t1:b'14':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'15':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'16':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'17':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'18':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'19':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'20':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'21':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+umbral superado 21, suscribiendo a humidity
+message:humidity:b'26':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'22':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'28':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'23':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'30':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'24':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'26':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'25':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'35':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'26':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'32':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'27':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'29':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'28':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'40':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'29':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'35':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'30':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'36':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'43':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'31':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'37':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'32':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'33':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'39':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'37':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'34':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'35':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'45':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'36':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'37':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'43':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'49':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'38':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'48':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'50':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'39':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'46':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:temperature/t1:b'0':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+temperatura 0 por debajo de umbral, cancelando suscripciÃ³n
+^CTraceback (most recent call last):
+  File "04_humidity.py", line 51, in <module>
+    main(broker)
+  File "04_humidity.py", line 42, in main
+    mqttc.loop_forever()
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/home/alumno/.local/lib/python3.8/site-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+
+]0;alumno@aula423: ~/Descargas/Practica mqtt[01;32malumno@aula423[00m:[01;34m~/Descargas/Practica mqtt[00m$ python3 04_humidity.py wild.mat.ucm.es humidity[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+
+Script done on 2022-04-07 11:38:50+02:00 [COMMAND_EXIT_CODE="130"]
